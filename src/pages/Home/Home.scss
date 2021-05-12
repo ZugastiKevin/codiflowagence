@@ -1,0 +1,19 @@
+body {
+  margin: 0px;
+}
+
+.Home {
+  text-align: justify;
+  padding: 20px;
+  transition: all 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.Home.Dark {
+  background: #333;
+  color: #f1f1f1;
+}
+
+.Home.Light {
+  background: #f1f1f1;
+  color: #333;
+}

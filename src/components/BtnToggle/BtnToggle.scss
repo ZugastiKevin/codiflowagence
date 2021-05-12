@@ -1,0 +1,23 @@
+.Btn-Toggle {
+  position: fixed;
+  top: 5px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Btn-Toggle.goLight {
+  background-image: url("../Images/moon.svg");
+  height: 35px;
+}
+
+.Btn-Toggle.goDark {
+  background-image: url("../Images/sunny.svg");
+  filter: invert(100%) sepia(4%) saturate(303%) hue-rotate(226deg)
+    brightness(117%) contrast(89%);
+  height: 35px;
+}

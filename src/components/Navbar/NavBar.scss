@@ -1,0 +1,20 @@
+body {
+  margin: 0px;
+}
+
+.NavBar {
+  height: 50px;
+  text-align: justify;
+  padding: 20px;
+  transition: all 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.NavBar.Dark {
+  background: #333;
+  color: #f1f1f1;
+}
+
+.NavBar.Light {
+  background: #f1f1f1;
+  color: #333;
+}
