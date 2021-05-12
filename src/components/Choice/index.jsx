@@ -13,13 +13,16 @@ const Choice = () => {
       <div className={theme ? 'style light' : 'style dark'}>
         <h3>Au fil des années, nous avons pu accompagner les meilleurs.</h3>
         <p>Découvrez pas à pas comment nous avons été présent pour lancer vos marques préférées.</p>
-        <ul>
+        <div className='card'>
           {work.map((item, index) => {
-            return <li key={index}>
-              <Link to={`/works/${item.slug}`}>{item.name}</Link>
-            </li>
+            return <div className='card-body' key={index}>
+              <div className='module'>
+                <Link className='card-link' to={`/works/${item.slug}`}>{item.name}</Link>
+                <div>{item.title}</div>
+              </div>
+            </div>
           })}
-        </ul>
+        </div>
       </div>
       <span className={theme ? 'style light footer' : 'style dark footer'}></span>
     </nav>
