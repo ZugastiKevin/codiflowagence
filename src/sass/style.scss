@@ -56,14 +56,20 @@ body {
   }
 }
 
-.footer {
-  display: block;
-  height: 100%;
-}
-
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   grid-gap: 10px;
+}
+
+.footer {
+  display: block;
+  height: 74.3vh;
+  width: auto;
+}
+.footer-clicked {
+  display: block;
+  height: 3px;
+  width: auto;
 }
